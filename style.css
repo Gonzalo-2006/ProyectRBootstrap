@@ -1,0 +1,25 @@
+ /* Slider a pantalla completa */
+    #carouselExampleIndicators {
+        max-width: 100% !important;
+        width: 100%;
+        margin: 0 !important;
+    }
+
+    #carouselExampleIndicators .carousel-item img {
+        width: 100%;
+        height: 500px; /* Altura fija, ajusta según prefieras */
+        object-fit: cover; /* Asegura que la imagen cubra todo el espacio */
+    }
+
+    /* Navbar estático (fijo) */
+    .navbar {
+        position: sticky;
+        top: 0;
+        z-index: 1020; /* Asegura que esté sobre otros elementos */
+        background-color: rgba(255,255,255,0.95) !important; /* Fondo semi-transparente */
+    }
+
+    /* Margen superior para el contenido para evitar que se oculte detrás del navbar */
+    body {
+        padding-top: 20px; /* Ajusta según la altura de tu navbar */
+    }
